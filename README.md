@@ -127,3 +127,60 @@ The script will generate a CSV file (e.g., `telegram_news_2024.csv`) in the proj
 | 2024-01-15 11:05:45 | MisbarFC    | A fact-check article about a recent...      |
 | 2024-01-16 09:00:23 | tibianps    | Breaking news report on current events...   |
 
+
+## About the Dataset: Arabic Real and Fake News Corpus
+
+The core of this project is a custom-built dataset of Arabic news articles, meticulously collected and classified as 'Real' or 'Fake'. This dataset was specifically curated to train and evaluate the NLP model for detecting misinformation within a specific context.
+
+### Data Preparation Workflow
+
+The creation of the dataset followed a structured, multi-stage process to ensure quality and relevance. The task was managed by a team of 15 groups (Group A through Group O).
+
+1.  **Time-Based Data Collection:** Each group was assigned a specific time frame to gather news articles from various online platforms. This systematic approach ensured comprehensive coverage over an extended period.
+
+2.  **Thematic Filtering:** A critical step in the process was to refine the dataset's focus. All collected news articles that were **not related to Palestine** were identified and removed. This step was crucial for creating a thematically consistent corpus for the model.
+
+3.  **Structuring and Labeling:** The filtered articles were then structured into a standardized format. Each news entry was carefully analyzed and manually assigned a `label` of either `Real` or `Fake`.
+
+4.  **Merging and Cleaning:** Finally, the datasets from all 15 groups were merged into a single, master file. This file underwent further cleaning and verification to ensure data integrity.
+
+### Final Dataset: `merged_cleaned.csv`
+
+> **Important Note:** The accuracy and quality of the data were the highest priority throughout this process. The final, consolidated dataset used for model training and evaluation is named `merged_cleaned.csv`.
+
+#### Dataset Schema
+
+The `merged_cleaned.csv` file contains the following columns for each news article:
+
+| Column Name | Description                                    |
+|-------------|------------------------------------------------|
+| `id`        | A unique serial number for each news entry.    |
+| `date`      | The publication date of the news article.      |
+| `platform`  | The source platform (e.g., website, channel).  |
+| `title`     | The headline or title of the news article.     |
+| `content`   | The full text content of the news article.     |
+| `label`     | The classification label: `Real` or `Fake`.    |
+
+### Data Collection Timeline
+
+The data was collected according to the following schedule, with each group covering a specific period:
+
+| Group # | Time Period Covered     |
+|---------|-------------------------|
+| A       | October & November 2023 |
+| B       | December 2023           |
+| C       | January 2024            |
+| D       | February 2024           |
+| E       | March 2024              |
+| F       | April 2024              |
+| G       | May 2024                |
+| H       | June 2024               |
+| I       | July 2024               |
+| J       | August 2024             |
+| K       | September 2024          |
+| L       | October 2024            |
+| M       | November 2024           |
+| N       | December 2024           |
+| O       | *(Specify period if any)*|
+
+
