@@ -68,7 +68,7 @@ Follow these steps to set up the project on your local machine.
 To scrape messages for a specific year (e.g., 2023, 2024, or 2025), you need to modify the `start_date`, `end_date`, and the output filename in the script.
 
 1.  **Open the Python Script**
-    Open your script file (e.g., `scraper.py`) in a text editor or IDE.
+    Open your script file (e.g., `telegram_scraper.py`) in a text editor or IDE.
 
 2.  **Set the Date Range and Output File**
     Locate the date range section in the script. Uncomment the lines for the year you wish to scrape and define a unique output filename for that year.
